@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <nav>
+      <router-link to="/">go to index</router-link>
+      <router-link to="/about">about page</router-link>
+      <router-link to="/customers/bob">customer bob</router-link>
+    </nav>
+
+    <br />
+    <hr />
     <router-view />
   </div>
 </template>
@@ -14,6 +22,8 @@
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
   padding: 30px;
 }
 
